@@ -971,6 +971,7 @@ footer {
 }
 
 .footer-copy {
+  width: 80%;
   font-size: .65rem;
   letter-spacing: .12em;
   color: rgba(255,255,255,.2);
