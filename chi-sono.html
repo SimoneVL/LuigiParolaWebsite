@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Sono — Luigi Parola</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-name">Luigi Parola</span>
+      <span class="nav-brand-sub">Parola Consulting SAS</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="chi-sono.html" class="active">Chi Sono</a></li>
+      <li><a href="cosa-offro.html">Cosa Offro</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="chi-sono.html">Chi Sono</a>
+    <a href="cosa-offro.html">Cosa Offro</a>
+    <a href="contatti.html">Contatti</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="label">Chi Sono</p>
+      <span class="gold-line"></span>
+      <h1 class="display page-title">Esperienza, visione<br>e centralità con il Cliente</h1>
+      <p class="page-intro">
+        Oltre trent’anni di <strong>esperienza</strong> in Marketing e Comunicazione, con un approccio
+        orientato alla customer centricity, alla qualità della <strong>relazione</strong> con il <strong>Cliente</strong> e alla creazione
+        di valore per l’<strong>Azienda</strong>.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="section-inner">
+      <div class="chi-sono-grid">
+        <div>
+          
+
+          <p class="chi-sono-p">
+            <strong>+30 anni</strong> in ambito <strong>Marketing</strong> e <strong>Comunicazione</strong> nei settori
+            Profumeria, Tricologico, Cosmesi, Fashion Donna e Bambino, maturata attraverso
+            <strong>percorsi professionali</strong> in contesti diversi e <strong>complessi</strong>.
+          </p>
+
+          <p class="chi-sono-p">
+            Nel corso della mia attività ho sviluppato una <strong>visione</strong> fortemente orientata al <strong>Cliente</strong>,
+            con un approccio basato sulla <strong>customer centricity</strong>, sulla qualità della
+            <strong>relazione</strong> e sulla costruzione di <strong>valore</strong> per l'<strong>Azienda</strong>.
+          </p>
+
+          <p class="chi-sono-p">
+            Ho operato sia in ambito retail sia nel mass market, su prodotti con 
+            <strong>posizionamenti differenti</strong>, dal Premium ai grandi volumi. Questo percorso mi ha permesso di sviluppare
+            una <strong>visione trasversale e omnicanale</strong> del mercato, comprendendo dinamiche,
+           <strong>unicità di comportamenti</strong>, leve di sviluppo e ottimizzazione lungo tutta la filiera
+            della <strong>relazione</strong> con il <strong>Cliente</strong>.
+          </p>
+
+          <div class="chi-sono-highlight">
+            <p>
+              Analizzo situazioni complesse per intervenire in modo strutturato, con equilibrio,
+              metodo e visione. Prevenire le criticità genera benefici concreti sia per il Cliente,
+              che percepisce attenzione, continuità e qualità dell’esperienza, sia per l’Azienda,
+              che riduce inefficienze e costi per creare e sviluppare valore.
+            </p>
+          </div>
+
+          <a href="https://www.linkedin.com/in/luigiparola/" target="_blank" class="linkedin-link" style="margin-top:2rem;">
+            Profilo LinkedIn
+          </a>
+        </div>
+
+        <div class="chi-sono-right">
+          <div class="profile-card">
+            <p class="profile-name">Luigi Parola</p>
+            <p class="profile-role">Marketing &amp; Communication Consultant</p>
+
+            <div class="profile-stats">
+              <div>
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Anni di<br>esperienza</div>
+              </div>
+              <div>
+                <div class="stat-number">B2C</div>
+                <div class="stat-label">Retail &amp;<br>Mass Market</div>
+              </div>
+              <div>
+                <div class="stat-number">360°</div>
+                <div class="stat-label">Visione<br>omnicanale</div>
+              </div>
+              <div>
+                <div class="stat-number">CX</div>
+                <div class="stat-label">Customer<br>Centricity</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sector-list">
+            <p class="sector-list-title">Settori di riferimento</p>
+            <div class="sectors">
+              <span class="sector-tag">Profumeria</span>
+              <span class="sector-tag">Tricologico</span>
+              <span class="sector-tag">Cosmesi</span>
+              <span class="sector-tag">Fashion Donna</span>
+              <span class="sector-tag">Fashion Bambino</span>
+              <span class="sector-tag">Retail</span>
+              <span class="sector-tag">Mass Market</span>
+              <span class="sector-tag">Premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-brand">Luigi Parola · Parola Consulting SAS</span>
+    <span class="footer-copy">© 2025 Parola Consulting SAS — Villastellone (TO)</span>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const ham = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    ham.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  </script>
+
+</body>
+</html>
