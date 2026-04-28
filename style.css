@@ -457,7 +457,8 @@ nav.scrolled {
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.65;
-  color: var(--navy);
+  color: #67789d;
+  fornt-weight: 600;
 }
 
 .chi-sono-right {
