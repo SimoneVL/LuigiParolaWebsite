@@ -790,7 +790,7 @@ nav.scrolled {
   flex-direction: column;
   gap: .5rem;
   padding: 1.2rem 1.4rem;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   transition: border-color .25s, background .25s;
 }
 
@@ -1093,7 +1093,7 @@ nav {
 }
 
 .area-item-name {
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 900px) {
