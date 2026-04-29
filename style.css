@@ -790,11 +790,39 @@ nav.scrolled {
 .area-item {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  align-items: flex-start;
+  gap: .7rem;
+  min-height: 140px;
   padding: 1.2rem 1.4rem;
   border: 2px solid var(--border);
-  transition: border-color .25s, background .25s;
+  transition: border-color .25s, background .25s, transform .2s;
 }
+
+
+
+.area-item-arrow {
+  display: inline-block;
+  margin-top: auto;
+  margin-left: auto;
+  font-size: .95rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: .75;
+  transition: transform .2s var(--ease), opacity .2s var(--ease);
+}
+
+.area-item:hover .area-item-arrow,
+.area-popup-trigger:focus-visible .area-item-arrow {
+  transform: translateY(2px);
+  opacity: 1;
+}
+
+.area-popup-trigger:active .area-item-arrow {
+  transform: translateY(1px);
+}
+
+
+
 
 .area-item:hover {
   border-color: var(--gold);
@@ -1230,4 +1258,3 @@ body.modal-open {
     max-height: calc(100vh - 13rem);
   }
 }
-
